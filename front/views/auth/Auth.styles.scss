@@ -1,0 +1,102 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $backgrond-dark-light !important;
+}
+
+.auth > form {
+
+  width: 100% !important;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background-color:$background-light !important ;
+}
+
+.auth > form > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 0;
+  color: $backgrond-dark-light;
+}
+
+.auth > form > div > *:not(label) {
+  padding: 8px 0;
+  
+}
+
+.auth > form > div > input,
+.auth > form > div > select {
+  padding: 8px !important;
+  color: $backgrond-dark-light;
+}
+
+.auth > form > div > a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.auth > form > div > div {
+  color: $color-principal;
+  font-size: 15px;
+}
+
+.auth h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.auth input,
+.auth select {
+  border-radius: $global-radius;
+  border: $global-border;
+}
+
+.auth a {
+  padding: 0 !important;
+}
+
+.auth button {
+  transition: all 0.3s ease-out;
+  background-color: $color-principal;
+  border-radius: $global-radius;
+  border: 0;
+  color: white;
+  padding: 10px !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth button:hover {
+  color: $color-principal;
+  border-radius: $global-radius;
+  border: 1px solid $color-principal;
+  background-color: white;
+  padding: 10px !important;
+  font-size: 16px;
+}
+
+.auth input.error,
+.auth select.error,
+.auth textarea.error {
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 600px) {
+  .auth {
+    background-color: $color-secundario;
+  }
+
+  .auth > form {
+    border: $global-border;
+    width: 400px;
+    border-radius: $global-radius;
+    background-color: white;
+  }
+}

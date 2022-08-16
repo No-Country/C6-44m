@@ -1,0 +1,44 @@
+.menu{
+    padding-bottom: 5px;
+    .ui.grid{
+        padding: 0;
+        margin: 0 !important;
+        justify-content: space-between !important;
+        @include tablet{
+            display: flex !important;
+        }
+    }
+    &__left,&__right {
+        padding: 0 !important;
+        display: flex !important; 
+        align-items: center;
+        justify-content: flex-end;
+
+        
+        div{
+            border: 0px !important;
+            box-shadow: 2 -2px 5px 2px rgba(0,0,0,0.2) !important;
+            background-color: $background-light;
+            border-radius:10px !important;
+            color:$backgrond-dark-light;
+            font-weight: bold;
+            padding: 5px !important;
+                &:hover{
+                    box-shadow: 2 -2px 5px 2px rgba(237, 234, 234, 0.8) !important;
+                    color: $font-color-orange;
+                    background-color: $backgrond-dark-light;  
+                    i{
+                        color: $font-color-orange !important;
+                    }
+                     
+                }
+            >i{
+                color: $backgrond-dark-light !important;
+                font-weight: bold;
+                 
+            }
+            
+        }
+    }
+        
+}
