@@ -1,5 +1,5 @@
 {
-  "name": "no-country-front",
+  "name": "proyecto-gym",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@googlemaps/js-api-loader": "1.14.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.0",
+    "dotenv": "16.0.1",
     "formik": "^2.2.9",
     "next": "12.2.4",
     "node-sass": "^7.0.1",
@@ -26,5 +28,7 @@
   "devDependencies": {
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4"
-  }
+  },
+  "keywords": [],
+  "description": "proyecto para no-country"
 }

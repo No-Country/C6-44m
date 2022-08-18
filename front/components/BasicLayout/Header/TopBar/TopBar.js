@@ -20,17 +20,17 @@ export default function TopBar() {
         </Link>
         <nav className="topbar__menu-options">
           <div>
-            <Link href="/sinprejuicios">
+            <Link href="/inicio">
               <a>Inicio</a>
             </Link>
           </div>
           <div>
-            <Link href="/sinprejuicios">
+            <Link href="/ubicacion">
               <a>Ubicacion</a>
             </Link>
           </div>
           <div>
-            <Link href="/sinprejuicios">
+            <Link href="/contacto">
               <a>Contacto</a>
             </Link>
           </div>
