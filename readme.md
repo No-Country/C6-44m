@@ -1,8 +1,11 @@
 DOCUMENTACION:
 
 #Titulo:            Crunch | Administración de gimnasios 
+
 #Descripción:       Aplicación web full responsive enfocada a administradores para dar apoyo en gestión de alumnos y actividades recurrentes en un gimnasio. 
+
 #Tecnologías:       ReactJs | NodeJs | MongoDB | NextJs  
+
 #Roles{             
 
     Backend: Diego Dimitroff 
@@ -12,6 +15,7 @@ DOCUMENTACION:
 }
 
 #Deploy-Backend:    https://node-app-gym.herokuapp.com/ 
+
 #Deploy-Frontend: 
 
 
