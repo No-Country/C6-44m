@@ -28,6 +28,7 @@ export default function MenuHome() {
         setShow={setshowModal}
         title="Iniciar sesión"
         size="small"
+        onCloseModal={onCloseModal}
       >
         <Auth onCloseModal={onCloseModal} />
       </BasicModal>

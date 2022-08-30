@@ -6,7 +6,7 @@ export default function BasicModal(props) {
 
   return (
     <Modal className="basic-modal" open={show} onClose={onClose} {...rest}>
-      <Modal.Header>
+      <Modal.Header className="headerModal">
         <span>{title}</span><Icon name="close" onClick={onClose}/>
       </Modal.Header>
       <Modal.Content>

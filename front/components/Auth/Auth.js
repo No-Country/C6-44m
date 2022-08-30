@@ -2,8 +2,9 @@ import React from 'react';
 import {Login} from "../../views/auth/Login/Login";
 
 
-export default function Auth() {
+export default function Auth(props) {
+  const {onCloseModal} = props;
   return (
-    <Login /> 
+    <Login onCloseModal={onCloseModal} /> 
   )
 }

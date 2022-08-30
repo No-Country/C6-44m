@@ -1,5 +1,8 @@
 .basic-modal{
-    .header{
+    z-index: 4000 !important;
+    margin-top: 90px !important;
+    
+    .headerModal{
         margin-top: 20px;
         background-color: $font-color-orange !important;
         display: flex !important;
@@ -7,7 +10,7 @@
         justify-content: space-between;
         font-weight: bold !important;
         color:$background-light !important;
-        
+     
         i{
             display: flex;
             align-items: center;
@@ -22,8 +25,14 @@
         }
     }
     .content{
+        margin-top: 25px;
         color: $font-color-light;
-        padding-top: 75px !important;
         background-color: $backgrond-dark-light !important;
+        padding-top: 80px !important;
+        @include tablet{
+
+            padding-top: 80px !important;
+
+        }
     }
 }

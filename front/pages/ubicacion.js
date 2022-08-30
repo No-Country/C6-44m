@@ -1,8 +1,13 @@
-import React,{Fragment} from 'react';
+import React from 'react';
+import dynamic from "next/dynamic";
 import BasicLayout from '../components/BasicLayout/BasicLayout';
 import { Icon } from 'semantic-ui-react';
+import Map from '../api/map/map'; //google map
 
 export default function ubicacion() {
+  const MapWithNoSSR = dynamic(() => import("../api/map/maps"), {
+    ssr: false
+  })
   return (
       <BasicLayout>
         <h1 className="title">Ubicación</h1>
@@ -15,28 +20,37 @@ export default function ubicacion() {
                 <h3>Buenos Aires - CABA</h3>
                 <p>Av. Córdoba 5932</p>
               </div>
-          
             </div>
           </section>
+          <div id="map" className='map'>
+                <MapWithNoSSR />
+          </div>
           <section className="contenedor__secction">
             <h2>Horarios </h2>
-            <h3>Dias Normales</h3>
-            <div>
-              <p>
-                <span>Lunes a Viernes:</span> 08:00 hs a 21:00 hs.
-              </p>
-              <p>
-                <span>Sabado:</span> 08:00 hs a 18:00 hs.
-              </p>
-            </div>
-            <h3>Feriados</h3>
-            <div>
-              <p>
-                <span>Lunes a Viernes:</span> 08:00 hs a 13:00 hs.
-              </p>
-              <p>
-                <span>Sabado:</span> Cerrado
-              </p>
+            <div className="horarios">
+              <div>
+                <h3 className="horarios__title">Dias Laborales</h3>
+                <div>
+                  <p>
+                    <span>Lunes a Viernes:</span> 8:00 a 21:00 hs.
+                  </p>
+                  <p>
+                    <span>Sabado:</span> 8:00 a 18:00 hs.
+                  </p>
+                </div>
+              </div>             
+            
+              <div>
+                <h3 className="horarios__title">Feriados</h3>
+                <div>
+                  <p>
+                    <span>Lunes a Viernes:</span> 8:00 a 13:00 hs
+                  </p>
+                  <p>
+                    <span>Sabado:</span> Cerrado
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </main>

@@ -1,19 +1,57 @@
 .title {
-  margin-top: 40px !important;
+  margin-top: 30px !important;
   margin-bottom: 0;
   padding: 10px;
   color: $font-color-orange;
   background-color: $backgrond-dark-light;
+  border-radius: 5px 5px 0px 0px;
+  @include tablet{
+    margin-top: 70px !important;
+  }
 }
 .contenedor {
   display: flex;
   flex-direction: column;
   background-color: $background-dark;
   color: $font-color-light;
-}
+  
+  @include tablet{
+    #map{
+      box-shadow: 0px 0px 18px 8px rgb(0 0 0 / 50%);
+      margin: 15px 50px ;
+    }
+    
+  }
+  @include desktop{
+    flex-direction: row;
+    flex-wrap: wrap;
+    #map{
+      margin: 25px 3em;
+      
+    }
 
+    
+  }
+  h2{
+    color: $font-color-orange;
+    background-color: $backgrond-dark-light;
+    border-radius: 5px;
+  }
+}
+.map{
+  
+  @include desktop {
+    order: 3;
+    width: 100%;
+  }
+  
+}
 .contenedor__secction {
   padding: 20px;
+  @include desktop{
+    width: 50%;
+    flex-wrap: wrap;
+  }
 }
 
 .contenedor__secction--ubicacion {
@@ -21,6 +59,35 @@
   justify-content: center;
 
   i {
-    margin-right: 14px;
+    margin-right: 5px;
   }
 }
+.horarios{
+  @include desktop{
+    display: flex;
+    justify-content: space-around;
+  }
+  &:last-of-type h3{
+    margin-top: 20px;
+    @include desktop{
+      margin-top: 0px;
+    }
+  }
+  &__title{
+    width: 200px;
+    margin: 12px auto;
+    border-radius: 6px;
+    color: $font-color-orange;
+    background-color: $backgrond-dark-light;
+  }
+  div{
+    div{
+      @include desktop{
+        text-align: left;
+      }
+      
+    }
+    
+  }
+}
+

@@ -1,0 +1,36 @@
+.contacto__contenedor {
+    padding-top: 150px;
+}
+.contacto__info{
+    display: flex;
+    justify-content: center;
+}
+img {
+    height: 16px;
+}
+button {
+    transition: all 0.3s ease-out;
+    background-color: $font-color-orange;
+    border-radius: $global-radius;
+    border: 0;
+    color: $background-light;
+    padding: 10px !important;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  button:hover {
+    color: $font-color-orange;
+    border-radius: $global-radius;
+    border: 1px solid $font-color-orange;
+    background-color:$background-light;
+    padding: 10px !important;
+    font-size: 16px;
+  }
+  p {
+    margin: 0 20px ;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
