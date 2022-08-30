@@ -1,0 +1,6 @@
+[submodule "back"]
+	path = back
+	url = https://github.com/felipecalderon/back.git
+[submodule "front"]
+	path = front
+	url = https://github.com/MartinCba/no-country-front.git
