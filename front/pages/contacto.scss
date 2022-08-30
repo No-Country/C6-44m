@@ -5,10 +5,8 @@
     display: flex;
     justify-content: center;
 }
-img {
-    height: 16px;
-}
-button {
+
+.contacto__contenedor button {
     transition: all 0.3s ease-out;
     background-color: $font-color-orange;
     border-radius: $global-radius;
@@ -20,7 +18,7 @@ button {
     margin-top: 30px;
   }
 
-  button:hover {
+  .contacto__contenedor button:hover {
     color: $font-color-orange;
     border-radius: $global-radius;
     border: 1px solid $font-color-orange;
@@ -28,9 +26,10 @@ button {
     padding: 10px !important;
     font-size: 16px;
   }
-  p {
+  .contacto__contenedor p {
+    display: flex;
     margin: 0 20px ;
   }
-  h2 {
+  .contacto__contenedor h2 {
     margin-bottom: 20px;
   }

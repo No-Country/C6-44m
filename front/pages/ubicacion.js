@@ -2,7 +2,7 @@ import React from 'react';
 import dynamic from "next/dynamic";
 import BasicLayout from '../components/BasicLayout/BasicLayout';
 import { Icon } from 'semantic-ui-react';
-import Map from '../api/map/map'; //google map
+// import Map from '../api/map/map'; google map
 
 export default function ubicacion() {
   const MapWithNoSSR = dynamic(() => import("../api/map/maps"), {
@@ -31,11 +31,11 @@ export default function ubicacion() {
               <div>
                 <h3 className="horarios__title">Dias Laborales</h3>
                 <div>
-                  <p>
-                    <span>Lunes a Viernes:</span> 8:00 a 21:00 hs.
+                  <p className="horarios__title-dias">
+                    <span >Lunes a Viernes :</span> 8:00 a 21:00 hs.
                   </p>
-                  <p>
-                    <span>Sabado:</span> 8:00 a 18:00 hs.
+                  <p className="horarios__title-dias">
+                    <span >Sabado :</span> 8:00 a 18:00 hs.
                   </p>
                 </div>
               </div>             
@@ -43,11 +43,11 @@ export default function ubicacion() {
               <div>
                 <h3 className="horarios__title">Feriados</h3>
                 <div>
-                  <p>
-                    <span>Lunes a Viernes:</span> 8:00 a 13:00 hs
+                  <p className="horarios__title-dias">
+                    <span >Lunes a Viernes :</span> 8:00 a 13:00 hs
                   </p>
-                  <p>
-                    <span>Sabado:</span> Cerrado
+                  <p className="horarios__title-dias">
+                    <span >Sabado :</span> Cerrado
                   </p>
                 </div>
               </div>

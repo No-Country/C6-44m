@@ -16,6 +16,7 @@
     "@mui/material": "^5.10.0",
     "dotenv": "16.0.1",
     "formik": "^2.2.9",
+    "jwt-decode": "^3.1.2",
     "leaflet": "^1.8.0",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-geosearch": "^3.6.1",

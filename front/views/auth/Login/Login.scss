@@ -1,0 +1,68 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgrond-dark-light  !important;
+
+}
+
+.formContent {
+
+    width: 100% !important;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $background-light  !important;
+
+    &__input,
+    &__select {
+        padding: 8px !important;
+        color: $backgrond-dark-light;
+    }
+
+    >div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        color: $backgrond-dark-light;
+
+        &*:not(label) {
+            padding: 8px 0;
+        }
+
+        label {
+            padding: 8px 0px 10px 10PX;
+            font-weight: bold;
+            font-size: 16px;
+
+        }
+
+        .Button-login {
+            transition: all 0.3s ease-out;
+            background-color: $color-principal;
+            border-radius: $global-radius;
+            border: 0;
+            color: white;
+            padding: 10px !important;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-principal;
+                border-radius: $global-radius;
+                border: 1px solid $color-principal;
+                background-color: white;
+                padding: 10px !important;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+
+
+}

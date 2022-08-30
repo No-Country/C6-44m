@@ -1,0 +1,18 @@
+.imagen-fondo{
+    display: block;
+    width: 100%;
+    height: 300px; 
+    background-image: url("/img/sinprejuicios.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    >h1{
+        margin: 0 auto !important;
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+    }     
+}
+

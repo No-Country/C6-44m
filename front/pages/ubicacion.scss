@@ -5,9 +5,6 @@
   color: $font-color-orange;
   background-color: $backgrond-dark-light;
   border-radius: 5px 5px 0px 0px;
-  @include tablet{
-    margin-top: 70px !important;
-  }
 }
 .contenedor {
   display: flex;
@@ -33,7 +30,7 @@
     
   }
   h2{
-    color: $font-color-orange;
+    color: $font-color-light;
     background-color: $backgrond-dark-light;
     border-radius: 5px;
   }
@@ -52,6 +49,7 @@
     width: 50%;
     flex-wrap: wrap;
   }
+  
 }
 
 .contenedor__secction--ubicacion {
@@ -76,9 +74,17 @@
   &__title{
     width: 200px;
     margin: 12px auto;
+    padding: 5px;
     border-radius: 6px;
-    color: $font-color-orange;
+    color: $font-color-light;
     background-color: $backgrond-dark-light;
+    
+    &-dias{
+      >span{
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
   }
   div{
     div{

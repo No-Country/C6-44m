@@ -1,10 +1,10 @@
 import { BASE_PATH } from "../../utils/constants";
+import {authFetch} from "../../utils/fetchAuth";
 
 
 export async function loginApi(values){
     try {
-
-        const url = `${BASE_PATH}/login`;
+        const url = `${BASE_PATH}/auth/login`;
         const params = {
             method:"POST",
             headers:{
@@ -22,3 +22,20 @@ export async function loginApi(values){
         return null
     }
 }
+
+export async function getMeApi(logout,idUser){
+    try {
+        const url = `${BASE_PATH}/users/${idUser}`;
+        const params = { 
+            method:"GET",
+            headers:{   
+                "Content-Type":"application/json",                 
+            },   
+        }
+        const result = await authFetch(url,params,logout);
+        return result ? result : null;
+    } catch (error) {
+        return null;
+    }
+}
+

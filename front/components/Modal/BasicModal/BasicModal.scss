@@ -25,12 +25,12 @@
         }
     }
     .content{
-        margin-top: 25px;
+        margin-top: 40px;
         color: $font-color-light;
         background-color: $backgrond-dark-light !important;
         padding-top: 80px !important;
         @include tablet{
-
+            margin-top: 0px;
             padding-top: 80px !important;
 
         }

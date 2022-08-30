@@ -5,7 +5,7 @@
 
 
 //layouts
-@import "../views/auth/Auth.styles.scss";
+@import "../views/auth/Login/Login.scss";
 
 
 //basic layouts
@@ -14,11 +14,13 @@
 @import "../components/BasicLayout/Header/TopBar/TopBar.scss";
 @import "../components/BasicLayout/Header/Menu/Menu.scss";
 @import "../components/Modal/BasicModal/BasicModal.scss";
+@import "../components/menu/MenuAdmin.scss";
 
 
 //pages
 @import "../pages/contacto.scss";
 @import "../pages/ubicacion.scss";
+@import "../pages/sinprejuicios.scss";
 
 
 //maps

@@ -4,11 +4,10 @@
 }
 
 .contenidoBasicLayout {
-      padding-top: 50px;
       min-height: 100vh;
       text-align: center;
       @include tablet {
-            padding-top: 5px;
+            padding: 10px;
       }
 
       .home {
